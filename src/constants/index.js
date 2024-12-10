@@ -62,7 +62,9 @@ import {
 import {
   SiDjango,
   SiJavascript,
+  SiAngular,
   SiBootstrap,
+  SiSass,
   SiReact,
   SiTailwindcss,
   SiGraphql,
@@ -70,7 +72,6 @@ import {
   SiCplusplus,
   SiC,
   SiRubyonrails,
-  SiJquery,
   SiVisualstudiocode,
   SiPostman,
   SiGit,
@@ -101,12 +102,16 @@ import {
   SiStreamlit,
   SiMongodb,
   SiExpress,
+  SiJquery,
   SiElectron,
   SiFirebase,
   SiVercel,
+  SiRsocket,
   SiNpm,
   SiSlack,
-  SiChatbot
+  SiChatbot,
+  SiWebpack,
+  SiAxios
 } from "react-icons/si";
 
 import {
@@ -131,7 +136,7 @@ import {
 
 import { DiCss3, DiJava, DiMsqlServer, DiRuby, DiWordpress } from "react-icons/di";
 
-export const CVLink = "https://drive.google.com/file/d/1ekTcHAqDB3jh2NTNIt3d2_e82CNXN1gr/view?usp=sharing";
+export const CVLink = "https://drive.google.com/file/d/1sqHicvD8gbrMJMtA3SiOnCVl9JvYZ5n4/view?usp=sharing";
 export const repoLink = "https://github.com/zamzam-abdelgawad";
 export const profileLink = "https://www.linkedin.com/in/zamzam-abdelgawad/"
 export const callToAction = "https://www.linkedin.com/in/zamzam-abdelgawad/t";
@@ -297,15 +302,20 @@ export const skills = [
         icon: SiJavascript,
         name: "JavaScript",
       },
-      // {
-      //   id: "pl-2",
-      //   icon: SiPython,
-      //   name: "Python",
-      // },
+      {
+        id: "pl-8",
+        icon: SiTypescript,
+        name: "Typescript",
+      },
       {
         id: "pl-3",
+        icon: SiC,
+        name: "C",
+      },
+      {
+        id: "pl-6",
         icon: SiCplusplus,
-        name: "C++",
+        name: "c++",
       },
       {
         id: "pl-4",
@@ -317,21 +327,11 @@ export const skills = [
         icon: DiCss3,
         name: "CSS",
       },
-      {
-        id: "pl-6",
-        icon: SiCsharp,
-        name: "c#",
-      },
       // {
       //   id: "pl-7",
       //   icon: SiJupyter,
       //   name: "Jupyter",
       // },
-      {
-        id: "pl-8",
-        icon: SiTypescript,
-        name: "Typescript",
-      }
     ],
   },
   {
@@ -342,25 +342,20 @@ export const skills = [
         icon: SiReact,
         name: "ReactJS",
       },
+      {
+        id: "pl-2",
+        icon: SiAngular,
+        name: "Angular",
+      },
       // {
       //   id: "f-2",
       //   icon: SiNextdotjs,
       //   name: "Next.js",
       // },
-      {
-        id: "f-3",
-        icon: SiBootstrap,
-        name: "Bootstrap",
-      },
-      {
-        id: "f-4",
-        icon: SiTailwindcss,
-        name: "Tailwind CSS",
-      },
       // {
       //   id: "f-5",
-      //   icon: SiStreamlit,
-      //   name: "Streamlit",
+      //   icon: SiRsocket,
+      //   name: "SiRsocket",
       // },
       // {
       //   id: "f-6",
@@ -387,11 +382,11 @@ export const skills = [
         icon: SiExpress,
         name: "Express.js",
       },
-      // {
-      //   id: "f-11",
-      //   icon: FaFlask,
-      //   name: "Flask",
-      // },
+      {
+        id: "f-11",
+        icon: SiJquery,
+        name: "JQuery",
+      },
       {
         id: "f-12",
         icon: FaWordpress,
@@ -411,6 +406,26 @@ export const skills = [
         id: "f-15",
         icon: SiFirebase,
         name: "Firebase",
+      },
+      {
+        id: "f-3",
+        icon: SiWebpack,
+        name: "Webpack",
+      },
+      {
+        id: "f-4",
+        icon: SiAxios,
+        name: "Axios",
+      },
+      {
+        id: "f-3",
+        icon: SiBootstrap,
+        name: "Bootstrap",
+      },
+      {
+        id: "f-4",
+        icon: SiSass,
+        name: "SASS",
       },
     ],
   },
@@ -446,6 +461,11 @@ export const skills = [
         id: "t-6",
         icon: AiFillGithub,
         name: "GitHub",
+      },
+      {
+        id: "t-6",
+        icon: SiFigma,
+        name: "Fimga",
       },
       // {
       //   id: "t-7",
@@ -673,6 +693,11 @@ export const projects = [
         name: "React"
       },
       {
+        id: "pl-2",
+        icon: SiAngular,
+        name: "Angular",
+      },
+      {
         id: "icon-2",
         icon: SiMongodb,
         name: "MongoDB",
@@ -687,11 +712,11 @@ export const projects = [
         icon: SiExpress,
         name: "Express.js",
       },
-      // {
-      //   id: "icon-4",
-      //   icon: SiGooglecloud,
-      //   name: "Google Cloud Platform"
-      // },
+      {
+        id: "f-15",
+        icon: SiFirebase,
+        name: "Firebase",
+      },
       // {
       //   id: "icon-5",
       //   icon: SiFlask,
@@ -754,16 +779,16 @@ export const projects = [
         icon: SiJavascript,
         name: "JavaScript"
       },
-      // {
-      //   id: "icon-3",
-      //   icon: SiWeb3Dotjs,
-      //   name: "Web3.js"
-      // },
-      // {
-      //   id: "icon-4",
-      //   icon: SiSolidity,
-      //   name: "Solidity"
-      // },
+      {
+        id: "icon-1",
+        icon: AiFillHtml5,
+        name: "HTML",
+      },
+      {
+        id: "icon-3",
+        icon: DiCss3,
+        name: "CSS",
+      },
       // {
       //   id: "icon-5",
       //   icon: FaHardHat,
@@ -795,21 +820,26 @@ export const projects = [
     content:
       "Website for publishing Blogs. Built a user‑friendly blog platform enabling efficient article publishing, editing, and management. Ensured a clear and organized structure for readers to navigate and access content effectively.",
     stack: [
-      // {
-      //   id: "icon-1",
-      //   icon: SiDotnet,
-      //   name: "Dot Net Core MVC 6"
-      // },
-      // {
-      //   id: "icon-2",
-      //   icon: SiBootstrap,
-      //   name: "Bootstrap"
-      // },
-      // {
-      //   id: "icon-3",
-      //   icon: DiMsqlServer,
-      //   name: "MS Sql Server"
-      // },
+      {
+        id: "icon-3",
+        icon: SiJavascript,
+        name: "JavaScript"
+      },
+      {
+        id: "pl-4",
+        icon: AiFillHtml5,
+        name: "HTML",
+      },
+      {
+        id: "icon-3",
+        icon: DiCss3,
+        name: "CSS",
+      },
+      {
+        id: "f-9",
+        icon: FaNode,
+        name: "Node.js",
+      },
       // {
       //   id: "icon-4",
       //   icon: SiJquery,
@@ -836,6 +866,21 @@ export const projects = [
         icon: SiJavascript,
         name: "JavaScript"
       },
+      {
+        id: "pl-4",
+        icon: AiFillHtml5,
+        name: "HTML",
+      },
+      {
+        id: "icon-2",
+        icon: SiBootstrap,
+        name: "Bootstrap"
+      },
+      {
+        id: "icon-3",
+        icon: DiCss3,
+        name: "CSS",
+      },
       // {
       //   id: "icon-2",
       //   icon: SiTailwindcss,
@@ -860,7 +905,7 @@ export const projects = [
     // link: "https://demastery.devlotech.com/",
     image: cdc,
     content:
-      "Edtech platform for students to access resources, attend workshops, and connect with mentors for career guidance.",
+      "A responsive e-commerce web application built with modern front-end technologies to enhance user experience and performance. The project features a dynamic product showcase, user-friendly navigation, and interactive components, all styled precisely to match a provided Figma design.",
     stack: [
       {
         id: "icon-3",

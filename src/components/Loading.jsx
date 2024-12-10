@@ -21,7 +21,7 @@ const Loading = () => {
         <div>
           <img
             src={parthmittal}
-            alt="Parth Mittal Logo"
+            alt="Logo"
             className="w-[80px] h-[80px]"
           />
         </div>
@@ -30,7 +30,7 @@ const Loading = () => {
         <div>
           <img
             src={profilePic}
-            alt="Umair Azmat"
+            alt="zamzam"
             className="w-[80px] h-[80px] border-2 border-teal-200 rounded-full"
           />
         </div>

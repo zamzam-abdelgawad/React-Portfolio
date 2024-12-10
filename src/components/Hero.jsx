@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../style";
-import LetsConnect from "./LetsConnect";
 import Lottie from "react-lottie-player";
 import animationData from "../lotties/person-coding.json";
 import { aboutMe, repoLink, CVLink, socialMedia } from "../constants";
@@ -67,9 +66,6 @@ const Hero = () => {
               <br className="sm:block hidden" /> I am
             </h1>
 
-            <div className="ss:flex hidden md:mr-4 mr-0">
-              <LetsConnect />
-            </div>
           </div>
 
           <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[80px] leading-[80px] w-full">
@@ -102,13 +98,6 @@ const Hero = () => {
                 icon={AiOutlineFilePdf}
               />
             </a>
-            <a href={repoLink} target="_blank">
-              <Button
-                styles="mt-10 inline-flex items-center justify-center"
-                text="Star"
-                icon={FaGithub}
-              />
-            </a>
             {/* Contact Me */}
             {/* <a href={repoLink} target="_blank">
             <Button
@@ -129,9 +118,6 @@ const Hero = () => {
           <div className="absolute z-[1] w-[50%] h-[50%] rounded-full bottom-40 white__gradient"></div>
         </div>
 
-        <div className={`ss:hidden ${styles.flexCenter}`}>
-          <LetsConnect />
-        </div>
       </section>
       {/* About Me Section */}
       <section
