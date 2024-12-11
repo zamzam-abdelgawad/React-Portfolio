@@ -19,6 +19,7 @@ const SkillCard = (props) => {
     <motion.div
       whileInView={{ y: [-20, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 0.5 }}
       className="mt-4 mb-6 border-l border-gray-200 dark:border-gray-700 mx-4"
     >
       <div className="relative w-3 h-3 bg-gray-200 rounded-full top-5 right-[6.2px] border dark:border-gray-900 dark:bg-gray-700"></div>
@@ -61,6 +62,7 @@ const ExperienceCard = (props) => {
     <motion.div
       whileInView={{ y: [-20, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 0.5 }}
     >
       <div className="flex flex-row items-center mb-6">
         <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-2">
@@ -85,7 +87,9 @@ const ExperienceCard = (props) => {
             {position.content.map((info, index) => (
               <Content key={index} index={index} {...info} />
             ))}
-            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"></p>
+            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            {position.content.link}
+            </p>
           </li>
         ))}
       </ol>
@@ -101,8 +105,6 @@ const SkillsAndExperience = () => {
       </h1>
       <div
         className={layout.section}
-        // whileInView={{ y: [-20, 0], opacity: [0, 1] }}
-        // transition={{ duration: 0.5 }}
       >
         {/* Skills */}
         <motion.div className={`ml-2 mb-6 ${layout.sectionInfo}`}>

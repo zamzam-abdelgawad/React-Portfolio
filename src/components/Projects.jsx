@@ -10,7 +10,7 @@ const Project = (props) => {
       className="px-12 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card"
       initial={{ y: -30, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.75, delay: 0.1 }}
     >
       <div className="flex flex-col sm:-mx-4 sm:flex-row">
@@ -44,9 +44,15 @@ const Project = (props) => {
         </div>
       </div>
 
-      <p className="mt-8 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 font-poppins">
-        {props.content}
-      </p>
+      <div>
+        {props.content.map((cond, index) => (
+          <div key={cond.id}>
+            <p className="mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 font-poppins">
+              {cond.point}
+            </p>
+          </div>
+        ))}
+      </div>
 
       <div className="flex mt-4 -mx-2">
         {props.github ? (

@@ -35,15 +35,12 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* only for mobile devices, created separately */}
       <div className="sm:hidden flex flex-1 justify-end items-center">
         {/* shows toggle icon based on its state */}
         <img
           src={toggle ? close : menu}
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
-          // correct way to change state using the prev
-          // version of the same state using a callback function
           onClick={() => setToggle((prev) => !prev)}
         />
 

@@ -57,6 +57,7 @@ const Education = () => {
       <motion.div
         className={layout.sectionReverse}
         whileInView={{ x: [-60, 0], opacity: [0, 1] }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1 }}
       >
         <div className={layout.sectionImgReverse}>

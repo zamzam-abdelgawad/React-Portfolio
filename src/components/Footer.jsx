@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import {
-  AiFillGithub,
-  AiFillPhone,
-  AiFillMail,
-  AiFillHome,
   AiOutlineMail,
   AiOutlineHome,
   AiOutlinePhone,
@@ -12,14 +8,8 @@ import emailjs from "emailjs-com";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "../style";
-import Button from "./Button";
-import { profilePic } from "../assets";
-import { layout } from "../style";
 import {
-  CVLink,
-  repoLink,
   socialMedia,
-  aboutMe,
   profileLink,
 } from "../constants";
 
@@ -72,17 +62,11 @@ const Footer = () => {
             id="contactMe"
             className={`flex md:flex-row flex-col ${styles.paddingY}`}
           >
-            <div className="flex-1 flex flex-col px-4 sm:px-8 lg:px-10">
+            <div className="flex-1 flex flex-col ">
               <div className="space-y-4">
                 <h1 className="font-poppins font-semibold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-center sm:text-left">
-                  LET&apos;S CONNECT!
+                  Let&apos;s Connect!
                 </h1>
-                {/* <p
-                  className={`${styles.paragraph} mt-5 text-base sm:text-lg lg:text-xl max-w-full md:max-w-[90%] lg:max-w-[75%] text-center sm:text-left`}
-                >
-                  Reach out to discuss opportunities, projects, or just to start
-                  a conversation.
-                </p> */}
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
@@ -196,59 +180,6 @@ const Footer = () => {
         </div>
       </div>
       <footer className="bg-gray-900 sm:px-16 px-6">
-        {/* <div
-          className={`${layout.sectionReverse} xl:max-w-[1280px] w-full mx-auto gap-y-4 `}
-        > */}
-        {/* <div className={` ${layout.sectionInfo}`}>
-            <h2 className="text-xl font-bold text-teal-200 font-poppins dark:text-white hover:text-teal-200 dark:hover:text-gray-300">
-              {aboutMe.name}
-            </h2>
-            <p
-              className={`font-poppins font-normal text-dimWhite text-[16px] leading-[30.8px] max-w-[470px] mt-5`}
-            >
-              {aboutMe.tagLine}
-            </p>
-            <div className="flex flex-row mt-4">
-              {socialMedia.map((social, index) => (
-                <a
-                  href={social.link}
-                  target="_blank"
-                  key={social.id}
-                  index={index}
-                  className="text-white mr-5 text-[25px] hover:text-teal-200"
-                >
-                  {React.createElement(social.icon)}
-                </a>
-              ))}
-            </div>
-
-            <div className="grid grid-cols-2">
-              <a href={CVLink} target="_blank">
-                <Button
-                  styles="mt-10 mr-3 inline-flex items-center justify-center"
-                  text="CV"
-                  icon={AiFillGithub}
-                />
-              </a>
-              <a href={repoLink} target="_blank">
-                <Button
-                  styles="mt-10 inline-flex items-center justify-center"
-                  text="Star"
-                  icon={AiFillGithub}
-                />
-              </a>
-            </div>
-          </div> */}
-
-        {/* <div className="md:ml-auto mt-10 md:mt-0">
-            <img
-              src={profilePic}
-              alt="Umair Azmat"
-              className="w-[250px] h-[250px] border-2 border-teal-200 relative z-[5] rounded-full"
-            />
-          </div> */}
-        {/* </div> */}
-
         <div className="flex flex-row mt-4 justify-center pt-4">
           {socialMedia.map((social, index) => (
             <a

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"; // Added useRef
+import React, { useState, useEffect, useRef } from "react"; 
 import { BsLink45Deg } from "react-icons/bs";
 import { achievements } from "../constants";
 import { AiFillGithub } from "react-icons/ai";
@@ -8,8 +8,8 @@ import styles from "../style";
 
 const Achievements = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [cardTotalWidth, setCardTotalWidth] = useState(0); // Added state for card width
-  const containerRef = useRef(null); // Added ref
+  const [cardTotalWidth, setCardTotalWidth] = useState(0); 
+  const containerRef = useRef(null); 
 
   useEffect(() => {
     const updateCardWidth = () => {
@@ -67,14 +67,14 @@ const Achievements = () => {
               ref={containerRef}
               className="flex transition-transform duration-500 ease-in-out"
               style={{
-                transform: `translateX(-${currentIndex * cardTotalWidth}px)`, // Updated to use card width
+                transform: `translateX(-${currentIndex * cardTotalWidth}px)`, 
               }}
             >
               {achievements.map((achievement, index) => (
                 <AchievementCard key={index} {...achievement} />
               ))}
             </div>
-            <div className="flex justify-end mb-4">
+            <div className="flex justify-end mb-4 sm:flex block lg:hidden">
               <button
                 onClick={handlePrev}
                 disabled={isPrevDisabled}
