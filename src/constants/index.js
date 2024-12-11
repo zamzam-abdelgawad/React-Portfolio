@@ -7,17 +7,8 @@ import {
   greentrust,
   gcuf,
   ps19,
-  smit,
   lablabai,
-  amal,
-  ibm,
-  meta,
   pftp,
-  peter,
-  ahmad,
-  kamal,
-  urooj,
-  abdullah,
 } from "../assets";
 
 import {
@@ -212,12 +203,12 @@ export const skills = [
         name: "Axios",
       },
       {
-        id: "f-3",
+        id: "f-19",
         icon: SiBootstrap,
         name: "Bootstrap",
       },
       {
-        id: "f-4",
+        id: "f-18",
         icon: SiSass,
         name: "SASS",
       },
@@ -252,7 +243,7 @@ export const skills = [
         name: "GitHub",
       },
       {
-        id: "t-5",
+        id: "t-6",
         icon: SiFigma,
         name: "Fimga",
       },
@@ -606,187 +597,6 @@ export const projects = [
   },
 ];
 
-// Add links to blogs here
-export const blogPosts = [
-  {
-    id: "post-1",
-    title: "Blog Post 01 - Title",
-    link: "#",
-    date: new Date().toLocaleDateString(), // Can be edited to any string format
-    image: "https://via.placeholder.com/600/92c952",
-    tags: [
-      {
-        id: "tag-1",
-        name: "tag 01",
-      },
-      {
-        id: "tag-2",
-        name: "tag 03",
-      },
-      {
-        id: "tag-3",
-        name: "tag 03",
-      },
-    ],
-  },
-  {
-    id: "post-2",
-    title: "Blog Post 02 - Title",
-    link: "#",
-    date: new Date().toLocaleDateString(),
-    image: "https://via.placeholder.com/600/d32776",
-    tags: [
-      {
-        id: "tag-1",
-        name: "tag 01",
-      },
-      {
-        id: "tag-2",
-        name: "tag 03",
-      },
-      {
-        id: "tag-3",
-        name: "tag 03",
-      },
-    ],
-  },
-  {
-    id: "post-3",
-    title: "Blog Post 03 - Title",
-    link: "#",
-    date: new Date().toLocaleDateString(),
-    image: "https://via.placeholder.com/600/771796",
-    tags: [
-      {
-        id: "tag-1",
-        name: "tag 01",
-      },
-      {
-        id: "tag-2",
-        name: "tag 03",
-      },
-      {
-        id: "tag-3",
-        name: "tag 03",
-      },
-    ],
-  },
-];
-
-// Highlight your GitHub stats like - Organisation, Issues Opened, Pull Requests etc.
-export const stats = [
-  {
-    id: "stats-1",
-    title: "Organisations",
-    value: "2+",
-  },
-  {
-    id: "stats-2",
-    title: "Issues Opened",
-    value: "6+",
-  },
-  {
-    id: "stats-3",
-    title: "Pull Requests",
-    value: "6+",
-  },
-];
-
-// List out the extra curricular activities you have induldged in like - student clubs, joining research groups etc.
-export const extraCurricular = [
-  {
-    id: 1,
-    organisation: "Amal Academy",
-    title: "Professional Career Fellowship",
-    duration: "March 2024 - May 2024",
-    content: [
-      {
-        text: "Selected among 4,300+ applicants for demonstrating passion, commitment, and a growth mindset.",
-      },
-      {
-        text: "Enhanced public speaking, presentation, and teamwork skills while leading an 8-10 member group on collaborative projects.",
-      },
-      {
-        text: "Led a mega project reducing plastic waste and providing clean water for wildlife by creating eco-friendly bird pods.",
-      },
-    ],
-    logo: amal,
-  },
-
-  {
-    id: 2,
-    organisation: "IBM",
-    title: "Full Stack Developer Professional",
-    duration: "September 2023",
-    content: [
-      {
-        text: "Earned IBM Full Stack Developer Professional Certificate through a Coursera initiative by my university and HEC.",
-      },
-      {
-        text: "Gained expertise in HTML, CSS, JavaScript, Node.js, React, and cloud-based app development.",
-      },
-      {
-        text: "Built RESTful APIs, deployed applications, and mastered version control with Git.",
-      },
-    ],
-    logo: ibm,
-  },
-  {
-    id: 3,
-    organisation: "META",
-    title: "Frontend Developer Professional",
-    duration: "Sepetember 2023",
-    content: [
-      {
-        text: "Completed Meta Front-End Developer Professional Certificate through a Coursera program by my university and HEC.",
-      },
-      {
-        text: "Mastered skills in HTML, CSS, JavaScript, React, and responsive web design.",
-      },
-      {
-        text: "Developed dynamic web applications and practiced hands-on projects for portfolio enhancement.",
-      },
-    ],
-    logo: meta,
-  },
-  {
-    id: 4,
-    organisation: "SMIT",
-    title: "Web & Mobile App Development Student",
-    duration: "Sep 2021 - Aug 2022",
-    content: [
-      {
-        text: "Completed an intensive Web and Mobile App Development program, specializing in MERN stack (MongoDB, Express.js, React, Node.js) and React Native.",
-      },
-      {
-        text: "Led and mentored 150+ students in a month-long Web Development Bootcamp, focusing on full-stack development and hands-on learning.",
-      },
-      {
-        text: "Participated in multiple hackathons, which led to teaching opportunities and the start of my freelance career in web and mobile app development.",
-      },
-    ],
-    logo: smit,
-  },
-  {
-    id: 5,
-    organisation: "PFTP",
-    title: "Full Stack Developer",
-    duration: "Jun 2022 - Oct 2022",
-    content: [
-      {
-        text: "Completed a comprehensive Full-Stack Web Development program with a focus on freelancing, achieving A+ grade and a Gold Medal.",
-      },
-      {
-        text: "Acquired key skills in HTML, CSS, JavaScript, React, Angular, Node.js, MySQL, MongoDB, and cloud deployment (Vercel, Heroku).",
-      },
-      {
-        text: "Started freelancing with a focus on web and mobile app development, applying the skills gained from the training program.",
-      },
-    ],
-    logo: pftp,
-  },
-];
-
 // Links to your social media profiles
 export const socialMedia = [
   {
@@ -814,51 +624,3 @@ export const aboutMe = {
   intro:
     "Full‑Stack Developer with over 2 years of experience in building scalable web and mobile applications. Skilled in modern frameworks like React, Angular, and Node.js, focusing on responsive design and seamless user experiences.",
 };
-
-// The maximum number of PRs to be displayed in the Open Source Contributions section.
-export const itemsToFetch = 20;
-
-// Add names of GitHub repos you'd like to display open source contributions from in the 'org/repo' format.
-export const includedRepos = [
-  "publiclab/plots2",
-  "zulip/zulip",
-  "paritytech/polkadot-sdk",
-];
-
-export const TESTIMONIALS = [
-  {
-    image: peter, // Replace with actual image path
-    name: "Peter Morgan",
-    role: "Founder & CEO, DeepLearning, UK",
-    feedback:
-      "In the short project I worked with Umair on, he proved himself to be a more than capable software engineer, contributing effectively to the group's efforts, and demonstrating strong technical leadership. During this time he demonstrated proficient interpersonal skills, communication abilities, and technical expertise, especially with Python, API Integrations, and the Streamlit platform we were using. Overall he worked skillfully and communicated effectively, resulting in a successful and timely project outcome. I would enjoy working with Umair again if the opportunity arose, as he is a skilled and talented engineer, along with a valuable team player.",
-  },
-  {
-    image: urooj,
-    name: "Urooj Fatima",
-    role: "Project Manager at AMAL",
-    feedback:
-      "I had the pleasure of teaching and mentoring Umair Azmat during our fellowship program, and I can confidently attest to his exceptional growth, resilience, and dedication to excellence. As my fellow, he consistently demonstrated a strong work ethic, taking ownership of his projects and showing a keen ability to learn and adapt. He was an outstanding team player, leading by example and inspiring his peers to strive for excellence. His positive attitude, creativity, and enthusiasm made him a joy to teach and mentor. I highly recommend Umair for his exceptional skills, leadership abilities, and potential for future success.",
-  },
-  {
-    image: kamal,
-    name: "Kamal Zareen",
-    role: "Pak USA Alumni",
-    feedback:
-      "As Umair's mentor during our fellowship, I saw his strong leadership and dedication. He led his group with enthusiasm, solved problems effectively, and always completed his work on time. Umair actively asked for and gave useful feedback, showing his commitment to improvement. His organizational skills and confidence made him a great fellow and team member. I have no doubt that he will continue to achieve great success in his future endeavors. I highly recommend Umair Azmat for any role that requires leadership, teamwork, and a passion for continuous improvement.",
-  },
-  {
-    image: ahmad,
-    name: "Ahmad Jajja",
-    role: "PhD Scholar At USA",
-    feedback:
-      "I highly recommend Umair Azmat for software engineering full-stack roles and as a software engineering concepts trainer. Umair's expertise in MERN technologies, dedication, and exceptional communication skills make him an ideal candidate. During our time at Saylani Mass IT Training Program (SMIT), I witnessed Umair's unwavering commitment to delivering high-quality results and ensuring student success. His professionalism, strong work ethic, and positive attitude contribute to a productive work environment. Based on my firsthand experience, I confidently endorse Umair for software engineering positions. His extensive knowledge, excellent communication skills, and dedication make him an invaluable asset to any organization. Please feel free to contact me for further information. I have no doubt that Umair will make significant contributions to your team.",
-  },
-  {
-    image: abdullah,
-    name: "Abdullah Qamar",
-    role: "CEO, QNAR International Inc.",
-    feedback:
-      "It’s rare that you come across standout talent like Umair Azmat. I had the pleasure of managing Umair at QNAR International. Umair's expertise in WordPress, JavaScript, TypeScript, React.js, Next.js, and React Native significantly contributed to our projects' success. Not only is he technically proficient, but he also possesses remarkable leadership qualities, evidenced by his achievements as a Gold Medalist at PFTP and his role as a former trainer at SMIT. Umair's commitment to excellence and his ability to navigate complex coding challenges have made a lasting impact on our team. He consistently delivered solutions that exceeded our expectations, demonstrating a keen understanding of both technical and business aspects. Umair is without a doubt an invaluable asset to any team, and I am confident in his continued success in the tech industry.",
-  },
-];
