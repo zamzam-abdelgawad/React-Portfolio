@@ -89,7 +89,7 @@ const Hero = () => {
             {/* styles is a prop */}
             <a href={CVLink} target="_blank">
               <Button
-                styles="mt-10 mr-3 inline-flex items-center justify-center"
+                styles="mt-10 mr-3 text-lg inline-flex items-center justify-center"
                 text="Download Resume"
                 icon={AiOutlineFilePdf}
               />
@@ -108,11 +108,11 @@ const Hero = () => {
       </section>
       {/* About Me Section */}
       <section
-        id="about"
-        className={`flex flex-col md:flex-row ${styles.paddingY}`}
+        id="about"ط
+        className={`flex-1 ${styles.flexStart} flex flex-col md:flex-row xl:px-0 sm:px-16 px-6 items-center ${styles.paddingY}`}
       >
-        <div className="flex-1 flex flex-col justify-start px-4 sm:px-8 lg:pl-16">
-          <h1 className="font-poppins font-semibold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight sm:leading-[60px] lg:leading-[70px] text-center sm:text-left">
+        <div className="flex-1 flex flex-col justify-start">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
             About Me
           </h1>
           <p
