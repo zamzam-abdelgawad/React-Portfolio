@@ -42,40 +42,41 @@ const Project = (props) => {
             </div>
           </div>
         </div>
+
+        <div className="flex mt-4 -mx-2 flex-end ml-auto">
+          {props.github ? (
+            <a href={props.github} target="_blank">
+              <AiFillGithub
+                size="2rem"
+                className="text-white mr-1 hover:text-teal-200"
+              />
+            </a>
+          ) : (
+            ""
+          )}
+          {props.link ? (
+            <a href={props.link} target="_blank">
+              <BsLink45Deg
+                size="2rem"
+                className="text-white hover:text-teal-200"
+              ></BsLink45Deg>
+            </a>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
 
-      <div>
+      <ul className="list-disc pt-8">
         {props.content.map((cond, index) => (
-          <div key={cond.id}>
-            <p className="mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 font-poppins">
-              {cond.point}
-            </p>
-          </div>
+          <li
+            key={cond.id}
+            className="mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 font-poppins"
+          >
+            {cond.point}
+          </li>
         ))}
-      </div>
-
-      <div className="flex mt-4 -mx-2">
-        {props.github ? (
-          <a href={props.github} target="_blank">
-            <AiFillGithub
-              size="2rem"
-              className="text-white mr-1 hover:text-teal-200"
-            />
-          </a>
-        ) : (
-          ""
-        )}
-        {props.link ? (
-          <a href={props.link} target="_blank">
-            <BsLink45Deg
-              size="2rem"
-              className="text-white hover:text-teal-200"
-            ></BsLink45Deg>
-          </a>
-        ) : (
-          ""
-        )}
-      </div>
+      </ul>
     </motion.div>
   );
 };
