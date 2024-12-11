@@ -88,7 +88,7 @@ const Footer = () => {
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-center space-x-4">
                       <AiOutlineMail className="w-6 h-6 text-teal-400 flex-shrink-0" />
                       <div className="text-gray-400">
                         <h3 className="text-lg font-semibold">Email</h3>
