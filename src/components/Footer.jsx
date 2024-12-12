@@ -35,11 +35,24 @@ const Footer = () => {
         color: "#fff",
         confirmButtonText: "OK",
         customClass: {
-          confirmButton: "bg-teal-400 text-white px-4 py-2 rounded", // Add Tailwind utility classes
+          confirmButton: "bg-teal-400 text-white px-4 py-2 rounded",
         },
       }).then(() => {
         event.target.reset();
       });
+      (error) => {
+        Swal.fire({
+          title: 'Error!',
+          text: 'Something went wrong, please try again.',
+          icon: 'error',
+          background: 'rgb(16 23 35)',
+          color: '#fff',
+          confirmButtonText: 'OK',
+          customClass: {
+            confirmButton: "bg-teal-400 text-white px-4 py-2 rounded",
+          },
+        });
+      }
     }
   };
 
