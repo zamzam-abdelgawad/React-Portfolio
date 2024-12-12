@@ -31,7 +31,7 @@ const Loading = () => {
           <img
             src={profilePic}
             alt="zamzam"
-            className="w-[80px] h-[80px] border-2 border-teal-200 rounded-full"
+            className="w-[80px] h-[80px] border-2 border-teal-200 rounded-full object-cover"
           />
         </div>
       </div>
