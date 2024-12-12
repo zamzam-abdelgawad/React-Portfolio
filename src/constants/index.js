@@ -22,6 +22,7 @@ import {
   SiJavascript,
   SiAngular,
   SiBootstrap,
+  SiTailwindcss,
   SiSass,
   SiReact,
   SiCplusplus,
@@ -206,6 +207,11 @@ export const skills = [
         id: "f-19",
         icon: SiBootstrap,
         name: "Bootstrap",
+      },
+      {
+        id: "f-19",
+        icon: SiTailwindcss,
+        name: "Tailwind",
       },
       {
         id: "f-18",

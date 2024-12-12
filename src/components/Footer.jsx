@@ -28,8 +28,8 @@ const Footer = () => {
 
     if (res.success) {
       Swal.fire({
-        title: "Good job!",
-        text: "You clicked the button!",
+        title: "Success!",
+        text: "Your message has been sent.",
         icon: "success",
         background: "rgb(16 23 35)",
         color: "#fff",
