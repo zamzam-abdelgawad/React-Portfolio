@@ -19,6 +19,7 @@
     "react-lottie-player": "1.5.4",
     "react-toastify": "^10.0.6",
     "smoothscroll-polyfill": "^0.4.4",
+    "sweetalert2": "^11.14.5",
     "swiper": "^11.1.15"
   },
   "devDependencies": {

@@ -1,45 +1,49 @@
 import React, { useState } from "react";
-import {
-  AiOutlineMail,
-  AiOutlineHome,
-  AiOutlinePhone,
-} from "react-icons/ai"; // Importing specific icons
+import Swal from "sweetalert2";
+import { AiOutlineMail, AiOutlineHome, AiOutlinePhone } from "react-icons/ai"; // Importing specific icons
 import emailjs from "emailjs-com";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "../style";
-import {
-  socialMedia,
-  profileLink,
-} from "../constants";
+import { socialMedia, profileLink } from "../constants";
 
 const Footer = () => {
-  const [isLoading, setIsLoading] = useState(false);
-
-  // Form submit handler to send email via EmailJS
-  async function onSubmit(event) {
+  const onSubmit = async (event) => {
     event.preventDefault();
-    setIsLoading(true);
+    const formData = new FormData(event.target);
 
-    const form = event.target;
+    formData.append("access_key", "f7e599c5-bb46-48ac-ad48-7c373c47ae82");
 
-    try {
-      await emailjs.sendForm(
-        import.meta.env.VITE_EMAIL_SERVICE_ID, // Your EmailJS Service ID
-        import.meta.env.VITE_EMAIL_TEMPLATE_ID, // Your EmailJS Template ID
-        form, // Pass the HTML form element here
-        import.meta.env.VITE_EMAIL_USER_ID // Your EmailJS User ID
-      );
-      setIsLoading(false);
-      toast.success("Email sent successfully!");
-      toast.success("I'll get back to you soon.");
-      form.reset(); // Clear the form after sending
-    } catch (error) {
-      setIsLoading(false);
-      toast.error("Failed to send message");
-      toast.error("Please try again.");
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Good job!",
+        text: "You clicked the button!",
+        icon: "success",
+        background: "rgb(16 23 35)",
+        color: "#fff",
+        confirmButtonText: "OK",
+        customClass: {
+          confirmButton: "bg-teal-400 text-white px-4 py-2 rounded", // Add Tailwind utility classes
+        },
+      }).then(() => {
+        event.target.reset();
+      });
     }
-  }
+  };
+
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <>

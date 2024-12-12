@@ -108,7 +108,7 @@ const Hero = () => {
       </section>
       {/* About Me Section */}
       <section
-        id="about"ط
+        id="about"
         className={`flex-1 ${styles.flexStart} flex flex-col md:flex-row xl:px-0 sm:px-16 px-6 items-center ${styles.paddingY}`}
       >
         <div className="flex-1 flex flex-col justify-start">
