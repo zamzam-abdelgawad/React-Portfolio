@@ -22,6 +22,7 @@ import {
   SiJavascript,
   SiAngular,
   SiBootstrap,
+  SiTailwindcss,
   SiSass,
   SiReact,
   SiCplusplus,
@@ -208,6 +209,11 @@ export const skills = [
         name: "Bootstrap",
       },
       {
+        id: "f-19",
+        icon: SiTailwindcss,
+        name: "Tailwind",
+      },
+      {
         id: "f-18",
         icon: SiSass,
         name: "SASS",
@@ -301,7 +307,6 @@ export const experiences = [
           },
         ],
       },
-
       // {
       //   title: "Projects",
       //   duration: "",
