@@ -37,10 +37,12 @@ const SkillCard = (props) => {
   );
 };
 
-const Content = ({ text, link }) => {
+const Content = ({ text, link, className = "" }) => {
   return (
     <div>
-      <p className="font-poppins font-normal text-[14px] text-dimWhite mt-4">
+      <p
+        className={`font-poppins font-normal text-[14px] text-dimWhite mt-4 ${className}`}
+      >
         {text}{" "}
         {link ? (
           <a href={link} target="_blank">
@@ -78,7 +80,7 @@ const ExperienceCard = (props) => {
             } ml-4`}
           >
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="text-lg font-semibold text-white dark:text-white">
+            <h3 className="text-lg font-semibold text-white">
               {position.title}
             </h3>
             <time className="mb-1 text-sm font-normal leading-none text-teal-400 dark:text-gray-500">
@@ -88,10 +90,41 @@ const ExperienceCard = (props) => {
               <Content key={index} index={index} {...info} />
             ))}
             <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            {position.content.link}
+              {position.content.link}
             </p>
           </li>
         ))}
+
+        {props?.projects && (
+          <h3 className="text-lg px-4 py-2 font-semibold text-white">
+            Projects
+          </h3>
+        )}
+
+        {props?.projects &&
+          props?.projects?.map((project, index) => (
+            <li
+              key={index}
+              className={`${
+                index === props.projects.length - 1 ? "mb-0" : "mb-4"
+              } ml-4`}
+            >
+              <a
+                className="text-sm font-semibold text-gradient !cursor-pointer"
+                href={project.link}
+                target="_blank"
+              >
+                {project.title}
+              </a>
+
+              <Content
+                key={index}
+                index={index}
+                text={project.text}
+                className="!mt-1"
+              />
+            </li>
+          ))}
       </ol>
     </motion.div>
   );
@@ -103,9 +136,7 @@ const SkillsAndExperience = () => {
       <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
         Skills & Experience
       </h1>
-      <div
-        className={layout.section}
-      >
+      <div className={layout.section}>
         {/* Skills */}
         <motion.div className={`ml-2 mb-6 ${layout.sectionInfo}`}>
           {skills.map((skill, index) => (

@@ -301,25 +301,23 @@ export const experiences = [
           },
         ],
       },
-
-      // {
-      //   title: "Projects",
-      //   duration: "",
-      //   content: [
-      // {
-      //   text: "➾ Dahabiya Booking Website: Developed a responsive website for boat bookings, featuring a customized online booking system.",
-      //   link: "https://dahabiyabooking.com/",
-      // },
-      // {
-      //   text: "➾ Saray El‑Nile Restaurant: Created an attractive website showcasing menus and locations with an intuitive and user‑friendly design.",
-      //   link: "https://sarayelnile-restaurants.com/",
-      // },
-      // {
-      //   text: "➾ Redsea Property Sales: Built a real estate platform for showcasing and selling properties, including advanced filtering and interactive listings.",
-      //   link: "",
-      // },
-      //   ],
-      // },
+    ],
+    projects: [
+      {
+        title: "Dahabiya Booking Website",
+        text: "➾ Dahabiya Booking Website: Developed a responsive website for boat bookings, featuring a customized online booking system.",
+        link: "https://dahabiyabooking.com",
+      },
+      {
+        title: "Saray El‑Nile Restaurant",
+        text: "➾ Saray El‑Nile Restaurant: Created an attractive website showcasing menus and locations with an intuitive and user‑friendly design.",
+        link: "https://sarayelnile-restaurants.com",
+      },
+      {
+        title: "Redsea Property Sales",
+        text: "➾ Redsea Property Sales: Built a real estate platform for showcasing and selling properties, including advanced filtering and interactive listings.",
+        link: "https://www.redseapropertysales.com",
+      },
     ],
   },
 ];
