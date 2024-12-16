@@ -89,7 +89,7 @@ const Hero = () => {
             {/* styles is a prop */}
             <a href={CVLink} target="_blank">
               <Button
-                styles="mt-10 mr-3 text-lg inline-flex items-center justify-center"
+                styles="mt-10 mr-3 lg:text-lg sm:text-lg inline-flex items-center justify-center"
                 text="Download Resume"
                 icon={AiOutlineFilePdf}
               />
