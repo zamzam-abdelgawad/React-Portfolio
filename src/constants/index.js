@@ -46,7 +46,7 @@ import { FaElementor, FaNode, FaWordpress } from "react-icons/fa";
 import { DiCss3 } from "react-icons/di";
 
 export const CVLink =
-  "https://drive.google.com/file/d/1sqHicvD8gbrMJMtA3SiOnCVl9JvYZ5n4/view?usp=sharing";
+  "https://drive.google.com/file/d/1dW5cmXH8kP0huyTl1vWIn6-c6oNallvn/view?usp=sharing";
 export const repoLink = "https://github.com/zamzam-abdelgawad";
 export const profileLink = "https://www.linkedin.com/in/zamzam-abdelgawad/";
 export const callToAction = "https://www.linkedin.com/in/zamzam-abdelgawad/t";
