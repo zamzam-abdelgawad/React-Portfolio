@@ -260,13 +260,38 @@ export const skills = [
 // Add your current/past professional work experience here
 export const experiences = [
   {
+    organisation: "RDI",
+    logo: ps19,
+    link: "https://rdi-eg.ai/english/",
+    positions: [
+      {
+        title: "Front-end developer",
+        duration: "Jan 2025 - Present",
+        content: [
+          {
+            text: "➾ Developed the UI for web scraping tools using Angular and PrimeNG, enabling efficient data extraction and visualization.",
+            link: "",
+          },
+          {
+            text: "➾ Designed and optimized interactive dashboards, ensuring a seamless user experience with real-time updates and intuitive controls.",
+            link: "",
+          },
+          {
+            text: "➾ Collaborated with backend teams to integrate APIs, enhance data presentation, and improve system performance.  ",
+            link: "",
+          },
+        ],
+      },
+    ],
+  },
+  {
     organisation: "Apex Coding Academy",
     logo: ps19,
     link: "https://apexcodingacad.com/",
     positions: [
       {
         title: "Instructor (JavaScript Stack)",
-        duration: "Mar 2024 - Present",
+        duration: "Mar 2024 - Jan 2025",
         content: [
           {
             text: "➾ Developed tools to assess student progress, measure learning outcomes, and provide actionable feedback.",
