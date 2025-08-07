@@ -9,6 +9,9 @@ import {
   ps19,
   lablabai,
   pftp,
+  xontel,
+  osman_img,
+  musafir
 } from "../assets";
 
 import {
@@ -39,6 +42,8 @@ import {
   SiFirebase,
   SiWebpack,
   SiAxios,
+  SiDocker,
+  SiPhp
 } from "react-icons/si";
 
 import { FaElementor, FaNode, FaWordpress } from "react-icons/fa";
@@ -49,7 +54,7 @@ export const CVLink =
   "https://drive.google.com/file/d/1GvQKaA5eWuE0c805b3pNNzWdB9V_gxeu/view?usp=sharing";
 export const repoLink = "https://github.com/zamzam-abdelgawad";
 export const profileLink = "https://www.linkedin.com/in/zamzam-abdelgawad/";
-export const callToAction = "https://www.linkedin.com/in/zamzam-abdelgawad/t";
+export const callToAction = "https://www.linkedin.com/in/zamzam-abdelgawad/";
 
 export const navLinks = [
   {
@@ -149,14 +154,14 @@ export const skills = [
     title: "Frameworks/Libraries",
     items: [
       {
-        id: "f-1",
-        icon: SiReact,
-        name: "ReactJS",
-      },
-      {
         id: "pl-2",
         icon: SiAngular,
         name: "Angular",
+      },
+      {
+        id: "f-1",
+        icon: SiReact,
+        name: "ReactJS",
       },
       {
         id: "f-8",
@@ -224,11 +229,6 @@ export const skills = [
     title: "Tools",
     items: [
       {
-        id: "t-1",
-        icon: SiMysql,
-        name: "MySQL",
-      },
-      {
         id: "t-2",
         icon: SiPostman,
         name: "Postman",
@@ -246,6 +246,11 @@ export const skills = [
       {
         id: "t-5",
         icon: AiFillGithub,
+        name: "GitLab",
+      },
+      {
+        id: "t-5",
+        icon: AiFillGithub,
         name: "GitHub",
       },
       {
@@ -253,6 +258,16 @@ export const skills = [
         icon: SiFigma,
         name: "Fimga",
       },
+      {
+        id: "t-5",
+        icon: SiDocker,
+        name: "Docker",
+      },
+      {
+        id: "t-1",
+        icon: SiMysql,
+        name: "MySQL",
+      }
     ],
   },
 ];
@@ -269,20 +284,55 @@ export const experiences = [
         duration: "Jan 2025 - Present",
         content: [
           {
-            text: "➾ Developed the UI for web scraping tools using Angular and PrimeNG, enabling efficient data extraction and visualization.",
+            text: "➾  Built a high-performance web scraping tool using Angular and PrimeNG for the frontend and Python on the backend, enabling scalable data extraction, intelligent filtering, and interactive visualization—and we automated export for downstream analysis.",
             link: "",
           },
           {
-            text: "➾ Designed and optimized interactive dashboards, ensuring a seamless user experience with real-time updates and intuitive controls.",
+            text: "➾ Developed an OCR Digitizer system powered by Python-based preprocessing (noise reduction, binarization, and layout detection), implementing end-to-end workflows, confidence scoring, and multi-format (JSON/CSV/PDF) exports to accelerate document archival and analytics.",
             link: "",
           },
           {
-            text: "➾ Collaborated with backend teams to integrate APIs, enhance data presentation, and improve system performance.  ",
+            text: "➾ Designed and optimized real-time dashboards with Angular Material, PrimeNG DataTables, and RxJS-driven streams, delivering live data updates, custom filters, drill-down charts, and responsive layouts for an intuitive user experience.",
+            link: "",
+          },
+          {
+            text: "➾ Collaborated cross-functionally with backend teams to integrate RESTful APIs, implement JWT authentication, and leverage WebSocket streams—significantly improving data throughput, presentation consistency, and overall system performance.",
             link: "",
           },
         ],
       },
     ],
+  },
+  {
+    organisation: "Freelance",
+    logo: lablabai,
+    link: "",
+    positions: [
+      {
+        title: "Full Stack WordPress developer",
+        duration: "Jan 2024 ‑ Present",
+        content: [
+
+        ],
+      },
+    ],
+projects: [
+  {
+    title: "Osman Alkaoud Online",
+    text: "Customized a high-performance WordPress theme with PHP & Gutenberg; SCSS-driven RTL support, adaptive navigation, and lightweight modal dialogs.",
+    link: "https://osman-alkaoud.online/"
+  },
+  {
+    title: "XonTel Documentation Center",
+    text: "Built a modular Elementor/HTML5 docs portal with custom HTML/CSS/JS, interactive animations, lazy-loaded assets, and WCAG-aware accessibility.",
+    link: "https://wiki.xontel.com/home/"
+  },
+  {
+    title: "Musafir Tour & Travel",
+    text: "Developed a responsive, mobile-first tourism platform with event management, bespoke SCSS styling, SEO-ready blog, and one-click WhatsApp API integration.",
+    link: "https://musafir-tr.com/"
+  }
+],
   },
   {
     organisation: "Apex Coding Academy",
@@ -355,6 +405,141 @@ export const experiences = [
 
 // Add information about all the projects to be listed out in your portfolio
 export const projects = [
+  {
+    id: "project-1",
+    title: "Osman Alkaoud",
+    link: "https://osman-alkaoud.online/",
+    image: osman_img,
+    content: [
+      {
+        id: "1",
+        point:
+          "Customized a high-performance WordPress theme using PHP and Elementor.",
+      },
+      {
+        id: "2",
+        point:
+          "SEO-friendly site featuring SCSS-powered RTL support, two-row/three-column desktop and vertical mobile navigation, and lightweight modal dialogs.",
+      },
+    ],
+    stack: [
+      {
+        id: "icon-1",
+        icon: AiFillHtml5,
+        name: "HTML",
+      },
+      {
+        id: "pl-2",
+        icon: DiCss3,
+        name: "CSS",
+      },
+      {
+        id: "icon-2",
+        icon: SiJavascript,
+        name: "Javascript",
+      },
+      {
+        id: "icon-3",
+        icon: FaElementor,
+        name: "Elmentor",
+      },
+      {
+        id: "icon-4",
+        icon: SiPhp,
+        name: "PHP",
+      }
+    ],
+  },
+  {
+    id: "project-1",
+    title: "XonTel Documentation Center",
+    link: "https://wiki.xontel.com/home/",
+    image: xontel,
+    content: [
+      {
+        id: "1",
+        point:
+          "Developed a modular Elementor/HTML5 docs portal showcasing PBX/call-center/Ai solutions ",
+      },
+      {
+        id: "2",
+        point:
+          "Include AI‐driven analytics, JavaScript animations, lazy-loaded assets and RTL support.",
+      },
+    ],
+    stack: [
+      {
+        id: "icon-1",
+        icon: AiFillHtml5,
+        name: "HTML",
+      },
+      {
+        id: "pl-2",
+        icon: DiCss3,
+        name: "CSS",
+      },
+      {
+        id: "icon-2",
+        icon: SiJavascript,
+        name: "Javascript",
+      },
+      {
+        id: "icon-3",
+        icon: FaElementor,
+        name: "Elmentor",
+      },
+      {
+        id: "icon-4",
+        icon: SiPhp,
+        name: "PHP",
+      }
+    ],
+  },
+  {
+    id: "project-1",
+    title: "Musafir Tour & Travel",
+    link: "https://musafir-tr.com/",
+    image: musafir,
+    content: [
+      {
+        id: "1",
+        point:
+          "Built a fully responsive tourism website with event workflows, dynamic Turkey/Azerbaijan program listings",
+      },
+      {
+        id: "2",
+        point:
+          "bespoke SCSS stylin, RTL support, an SEO-optimized blog, and one-click WhatsApp API integration.",
+      },
+    ],
+    stack: [
+      {
+        id: "icon-1",
+        icon: AiFillHtml5,
+        name: "HTML",
+      },
+      {
+        id: "pl-2",
+        icon: DiCss3,
+        name: "CSS",
+      },
+      {
+        id: "icon-2",
+        icon: SiJavascript,
+        name: "Javascript",
+      },
+      {
+        id: "icon-3",
+        icon: FaElementor,
+        name: "Elmentor",
+      },
+      {
+        id: "icon-4",
+        icon: SiPhp,
+        name: "PHP",
+      }
+    ],
+  },
   {
     id: "project-1",
     title: "3Nile - Full system",
@@ -649,7 +834,7 @@ export const socialMedia = [
 export const aboutMe = {
   name: "Zamzam Abdelgawad",
   githubUsername: "zamzam-abdelgawad",
-  tagLine: `Full‑Stack Developer`,
+  tagLine: `Software Engineer`,
   intro:
-    "Full‑Stack Developer with over 2 years of experience in building scalable web and mobile applications. Skilled in modern frameworks like React, Angular, and Node.js, focusing on responsive design and seamless user experiences.",
+    "Software Engineer with 2+ years of experience building scalable, user-centric web and mobile applications. Proficient in the MERN stack, Angular, React Native and Node.js, with expertise in TypeScript, RESTful APIs, responsive & SEO-optimized frontends, custom WordPress solutions, cloud deployments and CI/CD — skilled in Agile and Git workflows.",
 };

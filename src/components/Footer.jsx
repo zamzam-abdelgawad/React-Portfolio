@@ -119,7 +119,7 @@ const Footer = () => {
                       <AiOutlineHome className="w-6 h-6 text-teal-400" />
                       <div className="text-gray-400">
                         <h3 className="text-lg font-semibold">Location</h3>
-                        <p className="text-sm">Cairo, Egypt</p>
+                        <p className="text-sm">Luxor, Egypt</p>
                       </div>
                     </div>
                   </div>
@@ -212,7 +212,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-center pt-4 pb-4">
           <a
-            href="mailto:umairazmatdev@gmail.com"
+            href="mailto:zamzamabdelgawad@gmail.com"
             className="px-6 py-1 bg-teal-400 text-black rounded-md text-lg font-semibold hover:bg-teal-500"
           >
             Say Hello!

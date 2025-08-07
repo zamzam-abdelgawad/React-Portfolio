@@ -16,6 +16,10 @@ import gcuf from "./gcuf.svg";
 import ps19 from "./ps19.svg";
 import lablabai from "./lablabai.svg";
 import pftp from "./pftp.svg";
+import osman_img from "./Osman.png";
+import xontel from "./xontel.png";
+import musafir from "./musafir.png";
+
 
 export {
   menu,
@@ -36,4 +40,7 @@ export {
   ps19,
   lablabai,
   pftp,
+  osman_img,
+  xontel,
+  musafir
 };

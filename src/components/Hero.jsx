@@ -115,7 +115,7 @@ const Hero = () => {
           <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
             About Me
           </h1>
-          <p
+          {/* <p
             className={`text-dimWhite text-sm mt-4 sm:text-base lg:text-lg max-w-full md:max-w-[90%] lg:max-w-[80%] text-center sm:text-left leading-relaxed`}
           >
             My name is{" "}
@@ -150,7 +150,19 @@ const Hero = () => {
             make technology accessible and meaningful. My goal is to innovate,
             collaborate, and contribute to cutting-edge projects shaping the
             digital future.
-          </p>
+          </p> */}
+          <p
+  className={`text-dimWhite text-sm mt-4 sm:text-base lg:text-lg max-w-full md:max-w-[90%] lg:max-w-[80%] text-center sm:text-left leading-relaxed`}
+>
+  I’m <span className="text-teal-500 font-bold">Zamzam Abdelgawad</span>, a Software Engineer based in Luxor, Egypt, with over two years of hands-on experience architecting scalable web and mobile solutions. I specialize in the <span className="text-teal-500 font-bold">MERN stack, Angular, React, and Node.js</span>, leveraging modern JavaScript (ES6+), TypeScript, and RESTful APIs to deliver high-performance, responsive interfaces and robust back-end services. I’m also skilled in cross-platform mobile development with <span className="text-teal-500 font-bold">React Native</span>, cloud deployments, and CI/CD pipelines—ensuring seamless user experiences from prototype to production.
+  <br />
+  <br />
+  Throughout my career, I’ve delivered end-to-end solutions for e-commerce platforms, booking systems, interactive dashboards, and dynamic content portals. I excel at crafting SEO-optimized, mobile-first designs, building custom WordPress themes and plugins, and integrating third-party APIs like WhatsApp. Proficient in Agile methodologies and <span className="text-teal-500 font-bold">Git/GitHub</span> workflows, I collaborate with cross-functional teams to translate business requirements into cutting-edge digital products.
+  <br />
+  <br />
+  I’m passionate about continuous learning and innovation—exploring AI integrations, performance optimization techniques, and advanced front-end architectures. My mission is to create user-centric applications that drive engagement and growth, while maintaining scalable, maintainable codebases for the projects of tomorrow.
+</p>
+
         </div>
         <div className="flex flex-col justify-center items-center relative mt-8 md:mt-0 lg:mr-[44px]">
           <div className="overflow-hidden border-4 border-teal-500 w-52 h-52 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-2xl">
