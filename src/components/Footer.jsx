@@ -119,7 +119,7 @@ const Footer = () => {
                       <AiOutlineHome className="w-6 h-6 text-teal-400" />
                       <div className="text-gray-400">
                         <h3 className="text-lg font-semibold">Location</h3>
-                        <p className="text-sm">Luxor, Egypt</p>
+                        <p className="text-sm">Cairo, Egypt</p>
                       </div>
                     </div>
                   </div>

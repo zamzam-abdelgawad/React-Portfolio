@@ -834,7 +834,7 @@ export const socialMedia = [
 export const aboutMe = {
   name: "Zamzam Abdelgawad",
   githubUsername: "zamzam-abdelgawad",
-  tagLine: `Software Engineer`,
+  tagLine: `Frontend Developer`,
   intro:
-    "Software Engineer with 2+ years of experience building scalable, user-centric web and mobile applications. Proficient in the MERN stack, Angular, React Native and Node.js, with expertise in TypeScript, RESTful APIs, responsive & SEO-optimized frontends, custom WordPress solutions, cloud deployments and CI/CD — skilled in Agile and Git workflows.",
+    "Frontend Developer and ITI graduate with 2+ years of experience building scalable web and mobile applications. Expert in Angular, React, React Native, and Node.js with strong proficiency in TypeScript, responsive design, and cross-platform development. Proven ability to deliver high-performance, user-centric solutions while collaborating with agile development teams to optimize user experience and system performance.",
 };
